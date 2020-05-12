@@ -1,0 +1,13 @@
+<!--pages/wxss/wxss.wxml-->
+<view style='color:red; font-size=20px'>行内样式</view>
+
+<view class='box'>页面样式</view>
+
+<view class='conteiner'>全局样式</view>
+
+<view style='color:orange; background:blue; ' class='page app'>三种样式的作用</view>
+<!-- 3,配置尺寸的适配 rpx -->
+<view class="div1">box1</view>
+<view class="div2">box2</view>
+<view class="conteiner1">哈哈哈哈哈</view>
+<view class="conteiner2">呵呵呵呵呵</view>
