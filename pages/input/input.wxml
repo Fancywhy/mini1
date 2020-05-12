@@ -1,0 +1,13 @@
+<!--pages/input/input.wxml-->
+<!-- 占位文字 -->
+<input type='text' placeholder="请输入账号" placeholder-class/>
+<input type="number"/>
+<input confirm-type="send"/>
+<input  password/>
+<input bindinput="handleInput"
+       bindfocus="handleFocus"
+       bindblur="handleBlur"
+       bindconfirm="handleConfirm"
+/>
+
+

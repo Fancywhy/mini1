@@ -1,0 +1,20 @@
+<!--pages/image/image.wxml-->
+<!-- 1， -->
+<!-- <image/> -->
+<!-- <text>哈哈</text> -->
+<!-- 2,src:本地路径（相对路径/绝对路径）/远程路径 -->
+<image src='../../assets/test/2.jpg'/>
+<!-- <image src='assets/test/2.jpg'/> -->
+<image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg'/>
+
+<!-- 3，补充：相册中的图片 -->
+<button bindtap='handleChooseAlbum'>选中的照片</button>
+<image src="{{imagePath}}"/>
+
+<!-- bindload:监听图片加载完成 -->
+<view>---------------------------</view>
+<image wx:for="{{10}}"
+src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+bindload=" handlemageLoad"
+lazy-load
+/>

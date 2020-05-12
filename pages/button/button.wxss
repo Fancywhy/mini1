@@ -1,0 +1,5 @@
+/* pages/button/button.wxss */
+.button-hover{
+  background-color: aqua;
+  color: blueviolet;
+}
