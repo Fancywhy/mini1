@@ -1,0 +1,25 @@
+/* pages/wxss/wxss.wxss */
+
+@import './style/box.wxss';
+@import './style/conteiner.wxss';
+@import './style/weui-searchbar.wxss';
+
+/* .box1{
+  background: aqua;
+  width: 100px;
+  height: 100px;
+}
+
+.box2{
+  background: red;
+  width: 200rpx;
+  height: 200rpx;
+} */
+
+/* .conteiner1{
+  font-size: 32px;
+}
+
+.conteiner2{
+  font-size: 64rpx;
+} */

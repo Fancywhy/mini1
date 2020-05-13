@@ -1,0 +1,10 @@
+/* pages/wxml/wxml.wxss */
+/* .box{
+  font-size: 20px;
+  background: aqua;
+} */
+
+.active{
+
+  background: red;
+}

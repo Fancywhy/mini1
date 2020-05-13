@@ -1,0 +1,7 @@
+.conteiner1{
+  font-size: 32px;
+}
+
+.conteiner2{
+  font-size: 64rpx;
+}

@@ -1,0 +1,56 @@
+<!--pages/wxml/wxml.wxml-->
+<!-- Mustache语法 -->
+<view>{{message}}</view>
+<view>{{firstname}} {{lastname}}</view>
+<view>{{firstname + ' ' +lastname}}</view>
+<!-- <view>{{age >=18 ? "成年人"： "未成年人"}}</view> -->
+
+<view>{{nowTime}}</view>
+
+<button size='mini' bindtap="handleSwitchColor">切换颜色</button>
+<view class='box {{isActive ? "active": ""}}'>啊哈哈啊</view>
+
+<view>--------条件判断---------</view>
+<button size="mini" bindtap="handeSwitchShow">切换显示</button>
+<view wx:if="{{isShow}}">啊哈哈哈哈哈</view>
+
+<button size='mini' bindtap="handleIncrement">分数递增6</button>
+<view wx:if="{{score >=90}}">优秀</view>
+<view wx:elif="{{score >=80}}">良好</view>
+<view wx:elif="{{score >=60}}">及格</view>
+<view wx:else>不及格</view>
+
+<!-- hidden属性 -->
+<view hidden="{{false}}">hidden</view>
+<view wx:if="{{true}}">wx:if</view>
+<!-- 如果显示和切换频繁使用，用hidden,反之 wx:if -->
+
+<!-- wx:for遍历数据，，，数组，字符串，数字 -->
+<!-- <view wx:for="{{['aaa','ddd','ccc']}}">{{index}}.{{item}}</view>
+<view wx:for="abcd">{{index}}.{{item}}</view>
+<view wx:for="{{5}}">{{index}}.{{item}}</view> -->
+
+<!-- <block wx:if="{{isShow}}">
+<view>哈哈啊哈</view>
+<view>呵呵呵</view>
+</block>
+
+<view wx:for="{{movies}}">
+<view>电影序号：{{index}}</view>
+<view>名称：{{item}}</view>
+</view>
+
+<block wx:for="{{movies}}">
+<view>电影序号:{{index}}</view>
+<view>名称:{{item}}</view>
+</block> -->
+
+<!-- <block wx:for="{{movies}}"
+       wx:for-item="movie_1"
+       wx:for-index="i_2">
+  <view> {{i_2}}.{{movie_1}}</view>
+</block> -->
+
+<import src="/wxml/template.wxml"/>
+<template is="contentItem" data="{{btnText:'警告' }}"></template>
+
